@@ -94,11 +94,11 @@ async def progress_bar(current, total, reply, start):
             bar_length = 11
             completed_length = int(current * bar_length / total)
             remaining_length = bar_length - completed_length
-            progress_bar = "▓" * completed_length + "▒" * remaining_length
+            progress_bar = "💚" * completed_length + "❤" * remaining_length
             
             try:
-                await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━━⌈⚡﹝▓▒░ 𝗛𝗲𝗰𝘁𝗼𝗿𝗢𝗴 ░▒▓﹞⚡⌋━━➣`\n') 
-         #       await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━⌈  𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝙗𝙮 ▓▒░ 𝗛𝗲𝗰𝘁𝗼𝗿𝗢𝗴 ░▒▓⌋─━━➣`\n') 
+                await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━━⌈⚡﹝▓▒░ 💀𝗚𝗛𝗢𝗦𝗧💀 ░▒▓﹞⚡⌋━━➣`\n') 
+         #       await reply.edit(f'`╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣ \n┣⪼ ⚡{progress_bar} : {perc}\n┣⪼ 🚀 sᴘᴇᴇᴅ : {sp} \n┣⪼ 📟 ᴘʀᴏᴄᴇssᴇᴅ : {cur}\n┣⪼ 💾 sɪᴢᴇ- ᴇᴛᴀ :  {tot} : {eta} \n╰━⌈  𝘽𝙤𝙩 𝙈𝙖𝙙𝙚 𝙗𝙮 ▓▒░ 💀𝗚𝗛𝗢𝗦𝗧💀 ░▒▓⌋─━━➣`\n') 
             except FloodWait as e:
                 time.sleep(e.x)
 
